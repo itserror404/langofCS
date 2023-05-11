@@ -2,14 +2,14 @@
 import cgi
 
 
-# get form data
+
 form = cgi.FieldStorage()
 name = form.getvalue('name')
 email = form.getvalue('email')
 compalin = form.getvalue('complain')
 accept = form.getvalue('accept')
 
-# create HTML response
+
 print("""Content-type: text/html /n 
     <html> 
     <head> 
